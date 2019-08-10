@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to GuiDocs’s documentation! &mdash; GuiDocs  documentation</title>
+  <title>DynamicGui Documentation &mdash; GuiDocs  documentation</title>
   
 
   
@@ -34,7 +34,8 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functions" href="functions/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -78,12 +79,30 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to GuiDocs’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <p class="caption"><span class="caption-text">Gui Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slot/index.html">Slots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui/index.html">Guis</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">Gui Indepth</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example/index.html">Gui Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex/index.html">Complex Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remote/index.html">Remote Guis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functionapi/index.html">Function Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guiapi/index.html">Gui Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server/index.html">Implementing a server type</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui/issues">Bugtracker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui">Github</a></li>
+</ul>
+
             
           
         </div>
@@ -127,7 +146,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Welcome to GuiDocs’s documentation!</li>
+      <li>DynamicGui Documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -146,18 +165,77 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-guidocs-s-documentation">
-<h1>Welcome to GuiDocs’s documentation!<a class="headerlink" href="#welcome-to-guidocs-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="dynamicgui-documentation">
+<h1>DynamicGui Documentation<a class="headerlink" href="#dynamicgui-documentation" title="Permalink to this headline">¶</a></h1>
+<p>DynamicGui currently support <a class="reference external" href="https://learnxinyminutes.com/docs/yaml/">yaml</a>, <a class="reference external" href="https://learnxinyminutes.com/docs/json/">json</a>, <a class="reference external" href="https://learnxinyminutes.com/docs/xml/">xml</a> and <a class="reference external" href="https://github.com/lightbend/config#using-hocon-the-json-superset">hocon</a> for gui configuration.
+To write guis for DynamicGui you will need to know one the listed languages.</p>
 <div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<p class="caption"><span class="caption-text">Gui Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functions/index.html">Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#broadcast">Broadcast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#check-level">Check Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#execute-command-as-console">Execute Command As Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#execute-command-as-player">Execute Command As Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#gui-open">Gui open</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#no-permission">No Permission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#pay-with-money">Pay with money</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#permission">Permission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#player-message">Player Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#remove-slot">Remove Slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#send-player-to-server">Send player to server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#set-data-for-slot">Set data for slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#set-enchants-for-slot">Set enchants for slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#set-lore-for-slot">Set lore for slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#set-name-for-slot">Set name for slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#set-type-for-slot">Set type for slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#sound">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions/index.html#statistic">Statistic</a></li>
 </ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="slot/index.html">Slots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui/index.html">Guis</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Gui Indepth</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example/index.html">Gui Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex/index.html">Complex Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="complex/index.html#removing-a-slot">Removing a slot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="remote/index.html">Remote Guis</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functionapi/index.html">Function Api</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functionapi/index.html#making-a-function">Making a function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionapi/index.html#function-owners">Function owners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionapi/index.html#making-a-slot-only-function">Making a slot only function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionapi/index.html#making-a-gui-only-function">Making a gui only function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionapi/index.html#adding-a-function">Adding a function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guiapi/index.html">Gui Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server/index.html">Implementing a server type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="server/index.html#player-wrapper">Player Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server/index.html#inventory-manager">Inventory Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server/index.html#itemstack-manager">ItemStack Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server/index.html#events">Events</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui/issues">Bugtracker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui">Github</a></li>
+</ul>
+</div>
 </div>
 
 
@@ -165,6 +243,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="functions/index.html" class="btn btn-neutral float-right" title="Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>

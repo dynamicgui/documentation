@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Slots &mdash; GuiDocs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Guis" href="../gui/index.html" />
+    <link rel="prev" title="Functions" href="../functions/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GuiDocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Gui Concepts</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Slots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gui/index.html">Guis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Gui Indepth</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Gui Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../complex/index.html">Complex Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../remote/index.html">Remote Guis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../functionapi/index.html">Function Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guiapi/index.html">Gui Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/index.html">Implementing a server type</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui/issues">Bugtracker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui">Github</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GuiDocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Slots</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/slot/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="slots">
+<h1>Slots<a class="headerlink" href="#slots" title="Permalink to this headline">¶</a></h1>
+<p>Slots have a number of components that can be assigned to them.
+Below is an example of a basic slot.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span> <span class="c1">#Index to be placed at, starting at 0</span>
+  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;DIRT&quot;</span> <span class="c1">#Icon for the slot</span>
+</pre></div>
+</div>
+<p>More complex example of a slot.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span> <span class="c1">#Index to be placed at, starting at 0</span>
+  <span class="nt">amount</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span> <span class="c1">#2 of the item, default is 1</span>
+  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;DIRT&quot;</span> <span class="c1">#Icon for the slot</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;cDirt</span><span class="nv"> </span><span class="s">but</span><span class="nv"> </span><span class="s">red&quot;</span> <span class="c1">#Name supports color codes</span>
+  <span class="nt">lore</span><span class="p">:</span> <span class="c1">#Lore for the item</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;&amp;cThere</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">dirt</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">slot&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;&amp;fLore</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">also</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">multiple</span><span class="nv"> </span><span class="s">lines!&quot;</span>
+  <span class="nt">functions</span><span class="p">:</span> <span class="c1">#Functions to run on click</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;fThis</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">simple</span><span class="nv"> </span><span class="s">test&quot;</span>
+</pre></div>
+</div>
+<p>Example of using fail functions.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span> <span class="c1">#Index to be placed at, starting at 0</span>
+  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;DIRT&quot;</span> <span class="c1">#Icon for the slot</span>
+  <span class="nt">functions</span><span class="p">:</span> <span class="c1">#Functions to run on click</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;pay:</span><span class="nv"> </span><span class="s">1000&quot;</span>
+  <span class="nt">pay-failfunctions</span><span class="p">:</span> <span class="c1">#Didn&#39;t have 1000 to pay</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;pmsg:</span><span class="nv"> </span><span class="s">You</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">enough</span><span class="nv"> </span><span class="s">money&quot;</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../gui/index.html" class="btn btn-neutral float-right" title="Guis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../functions/index.html" class="btn btn-neutral float-left" title="Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, virustotalop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

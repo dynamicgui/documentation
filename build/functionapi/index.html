@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Function Api &mdash; GuiDocs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Gui Api" href="../guiapi/index.html" />
+    <link rel="prev" title="Remote Guis" href="../remote/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GuiDocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Gui Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slot/index.html">Slots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gui/index.html">Guis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Gui Indepth</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Gui Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../complex/index.html">Complex Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../remote/index.html">Remote Guis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Function Api</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#making-a-function">Making a function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#function-owners">Function owners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-a-slot-only-function">Making a slot only function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-a-gui-only-function">Making a gui only function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-function">Adding a function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guiapi/index.html">Gui Api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/index.html">Implementing a server type</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui/issues">Bugtracker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ClubObsidian/DynamicGui">Github</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GuiDocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Function Api</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/functionapi/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="function-api">
+<h1>Function Api<a class="headerlink" href="#function-api" title="Permalink to this headline">¶</a></h1>
+<p>The function manager is what is responsible for the registration of functions. Below you will find out how to write functions and add the functions to the function manager so they can be used in guis.</p>
+<p>As a note any built-in functions should be platform independent, if you want more information on this see the <a class="reference external" href="../server">implementing a server type documentation.</a> This does not apply to addon plugins.</p>
+<div class="section" id="making-a-function">
+<h2>Making a function<a class="headerlink" href="#making-a-function" title="Permalink to this headline">¶</a></h2>
+<p>All functions have to extend the Function class. The function class allows you to work with the player and manipulate guis.</p>
+<p>Below is an example of a simple function that… todo</p>
+</div>
+<div class="section" id="function-owners">
+<h2>Function owners<a class="headerlink" href="#function-owners" title="Permalink to this headline">¶</a></h2>
+<p>Most functions do not need to worry about the owner of the function. However there are certain operations where it would be useful to know the owner of the function. In DynamicGui function owners are split up slots and guis. Slots refer to the individual slots in a gui and a gui is the whole gui including the slots that make up the gui.</p>
+</div>
+<div class="section" id="making-a-slot-only-function">
+<h2>Making a slot only function<a class="headerlink" href="#making-a-slot-only-function" title="Permalink to this headline">¶</a></h2>
+<p>Slot functions are slot only and are to be used if a functions can only interact with a slot.</p>
+</div>
+<div class="section" id="making-a-gui-only-function">
+<h2>Making a gui only function<a class="headerlink" href="#making-a-gui-only-function" title="Permalink to this headline">¶</a></h2>
+<p>Gui functions are gui only and can be used if a function needs to manipulate the gui on creation and on opening.</p>
+</div>
+<div class="section" id="adding-a-function">
+<h2>Adding a function<a class="headerlink" href="#adding-a-function" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../guiapi/index.html" class="btn btn-neutral float-right" title="Gui Api" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../remote/index.html" class="btn btn-neutral float-left" title="Remote Guis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, virustotalop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

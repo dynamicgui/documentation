@@ -1,20 +1,37 @@
-.. GuiDocs documentation master file, created by
-   sphinx-quickstart on Thu Aug  8 22:51:54 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+DynamicGui Documentation
+========================
 
-Welcome to GuiDocs's documentation!
-===================================
+
+DynamicGui currently support `yaml <https://learnxinyminutes.com/docs/yaml/>`_, `json <https://learnxinyminutes.com/docs/json/>`_, `xml <https://learnxinyminutes.com/docs/xml/>`_ and `hocon <https://github.com/lightbend/config#using-hocon-the-json-superset>`_ for gui configuration.
+To write guis for DynamicGui you will need to know one the listed languages.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth 2
+   :caption: Gui Concepts
+   
+   functions/index
+   slot/index
+   gui/index
+   
+.. toctree::
+   :maxdepth 2
+   :caption: Gui Indepth
+   
+   example/index
+   complex/index
+   remote/index
 
+.. toctree::
+   :maxdepth 2
+   :caption: Developer Documentation
+   
+   functionapi/index
+   guiapi/index
+   server/index
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :maxdepth 2
+   :caption: Project
+   
+   Bugtracker <https://github.com/ClubObsidian/DynamicGui/issues>
+   Github <https://github.com/ClubObsidian/DynamicGui>
