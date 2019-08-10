@@ -25,6 +25,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/footer.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -180,7 +181,25 @@
 <div class="section" id="making-a-function">
 <h2>Making a function<a class="headerlink" href="#making-a-function" title="Permalink to this headline">¶</a></h2>
 <p>All functions have to extend the Function class. The function class allows you to work with the player and manipulate guis.</p>
-<p>Below is an example of a simple function that… todo</p>
+<p>Below is an example of a simple function that prints the given data.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrintFunction</span> <span class="kd">extends</span> <span class="n">Function</span> <span class="o">{</span>
+
+	<span class="c1">//Your ide should autogenerate a serial version id</span>
+
+	<span class="kd">public</span> <span class="nf">PrintFunction</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> 
+	<span class="o">{</span>
+		<span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+	<span class="o">}</span>
+	
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">function</span><span class="o">(</span><span class="kd">final</span> <span class="n">PlayerWrapper</span><span class="o">&lt;?&gt;</span> <span class="n">playerWrapper</span><span class="o">)</span>
+	<span class="o">{</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">getData</span><span class="o">());</span>
+		<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="function-owners">
 <h2>Function owners<a class="headerlink" href="#function-owners" title="Permalink to this headline">¶</a></h2>
@@ -219,7 +238,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, virustotalop
+        &copy; Copyright 
 
     </p>
   </div>

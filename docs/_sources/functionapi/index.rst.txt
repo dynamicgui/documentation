@@ -12,8 +12,10 @@ Making a function
 
 All functions have to extend the Function class. The function class allows you to work with the player and manipulate guis.
 
-Below is an example of a simple function that... todo
+Below is an example of a simple function that prints the given data.
 
+.. literalinclude:: /code/PrintFunction.java
+   :language: java
 
 ===============
 Function owners
