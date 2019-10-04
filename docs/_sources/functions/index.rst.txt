@@ -70,18 +70,6 @@ Usage::
 Makes a player open a gui named "test".
 
 
-=============
-No Permission
-=============
-
-Checks if a player does not have a permission.
-
-Usage::
-
-   nopermission: some.permission
-
-Checks if the player does not have the permission "some.permission".
-
 
 ==============
 Pay with money
@@ -107,6 +95,19 @@ Usage::
    permission: some.permission
 
 Checks if the player has the permission "some.permission".
+
+
+=============
+No Permission
+=============
+
+Checks if a player does not have a permission.
+
+Usage::
+
+   nopermission: some.permission
+
+Checks if the player does not have the permission "some.permission".
 
 
 =========
