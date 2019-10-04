@@ -86,6 +86,20 @@ Usage::
 Makes a player open a gui named "test".
 
 
+========
+Log a message to console
+========
+
+Log a message to the console so it can be viewed in the log or console.
+
+
+Usage::
+
+   log: test
+
+Logs the message test to the console and log.
+
+
 ==============
 Money balance
 ==============
