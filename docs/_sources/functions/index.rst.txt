@@ -7,18 +7,6 @@ Below are the built-in functions for DynamicGui, addons may add more.
 If you are interested in making functions take a look at the `developer docs. <../functionapi>`_
 
 =========
-Add Permission
-=========
-
-The addpermission function is used to add a permission to a player.
-
-Usage::
-
-   addpermission: some.permission  
-
-Adds the permission "some.permission" to the player.
-
-=========
 Broadcast
 =========
 
@@ -109,7 +97,7 @@ Makes the player pay 1000 if they have the balance avaliable.
 
 
 ==========
-Permission
+Permission checking
 ==========
 
 Checks if the player has a permission.
@@ -120,6 +108,31 @@ Usage::
 
 Checks if the player has the permission "some.permission".
 
+
+=========
+Permission adding
+=========
+
+The addpermission function is used to add a permission to a player.
+
+Usage::
+
+   addpermission: some.permission  
+
+Adds the permission "some.permission" to the player.
+
+
+=========
+Permission removing
+=========
+
+The removepermission function is used to remove a permission from the player.
+
+Usage::
+
+   removepermission: some.permission  
+
+Removes the permission "some.permission" from the player.
 
 
 ===========
