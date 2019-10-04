@@ -202,7 +202,7 @@ Also supports multi-line lore.
 
 Usage::
 
-   setlore: test;lore
+   setlore: test\nlore
    
 Sets the lore for the current slot to "test" on the first line and "lore" on the second.
 
