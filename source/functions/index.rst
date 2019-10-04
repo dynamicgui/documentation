@@ -164,7 +164,9 @@ Sends the player to the server "testserver".
 Set data for slot
 ================
 
-Set data for the current slot, can be used in 1.12 and below.
+Set data for the current slot, can be used in **1.12 and below.**
+
+Do not use on **1.13+**
 
 Usage::
 

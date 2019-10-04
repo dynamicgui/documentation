@@ -164,7 +164,9 @@ Sends the player to the server "testserver".
 Set data for slot
 ================
 
-Set data for the current slot, can be used in 1.12 and below.
+Set data for the current slot, can be used in **1.12 and below.**
+
+Do not use on **1.13+**
 
 Usage::
 
@@ -202,7 +204,7 @@ Also supports multi-line lore.
 
 Usage::
 
-   setlore: test;lore
+   setlore: test\nlore
    
 Sets the lore for the current slot to "test" on the first line and "lore" on the second.
 
