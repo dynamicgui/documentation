@@ -121,18 +121,6 @@ Usage::
 Checks if the player has the permission "some.permission".
 
 
-==============
-Player Message
-==============
-
-Sends the player a message.
-
-Usage::
-   
-   pmsg: Hello!
-   
-Sends the player the message "Hello!".
-
 
 ===========
 Generate a random number
@@ -145,6 +133,19 @@ Usage::
    random: 10-9 #Winning number is 9
  
 Generates a random number from 1 through 10 and the winning number is 9.
+
+
+==============
+Message a player
+==============
+
+Sends the player a message.
+
+Usage::
+   
+   pmsg: Hello!
+   
+Sends the player the message "Hello!".
 
 ===========
 Remove Slot
