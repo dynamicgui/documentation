@@ -135,6 +135,18 @@ Sends the player the message "Hello!".
 
 
 ===========
+Generate a random number
+===========
+
+Generates a random number in a number range.
+
+Usage::
+
+   random: 10-9 #Winning number is 9
+ 
+Generates a random number from 1 through 10 and the winning number is 9.
+
+===========
 Remove Slot
 ===========
 
@@ -158,6 +170,20 @@ Usage::
    send: testserver
    
 Sends the player to the server "testserver".
+
+
+================
+Set amount for the slot
+================
+
+Sets the amount of the current slot.
+
+
+Usage::
+
+   setamount: 5
+   
+Sets the slot of the slot to 5.
 
 
 ================
