@@ -161,6 +161,20 @@ Sends the player to the server "testserver".
 
 
 ================
+Set close for the slot or gui
+================
+
+Set whether or not the slot or gui should close on click.
+
+
+Usage::
+
+   setclose: true
+   
+Sets the slot or gui to close on slot click.
+
+
+================
 Set data for slot
 ================
 
