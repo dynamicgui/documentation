@@ -89,7 +89,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#execute-command-as-console">Execute Command As Console</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#execute-command-as-player">Execute Command As Player</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gui-open">Gui open</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pay-with-money">Pay with money</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#money-balance">Money balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#money-paying">Money paying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#money-deposit">Money deposit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permission-checking">Permission checking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#no-permission">No Permission</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permission-adding">Permission adding</a></li>
@@ -244,14 +246,32 @@ If you are interested in making functions take a look at the <a class="reference
 </div>
 <p>Makes a player open a gui named “test”.</p>
 </div>
-<div class="section" id="pay-with-money">
-<h2>Pay with money<a class="headerlink" href="#pay-with-money" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="money-balance">
+<h2>Money balance<a class="headerlink" href="#money-balance" title="Permalink to this headline">¶</a></h2>
+<p>Check’s a player balance.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">moneybalance</span><span class="p">:</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+<p>Checks if the player has a balance of  1000 dollars.</p>
+</div>
+<div class="section" id="money-paying">
+<h2>Money paying<a class="headerlink" href="#money-paying" title="Permalink to this headline">¶</a></h2>
 <p>Allows a player to pay money.</p>
 <p>Usage:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">moneywithdraw</span><span class="p">:</span> <span class="mi">1000</span>
 </pre></div>
 </div>
 <p>Makes the player pay 1000 if they have the balance avaliable.</p>
+</div>
+<div class="section" id="money-deposit">
+<h2>Money deposit<a class="headerlink" href="#money-deposit" title="Permalink to this headline">¶</a></h2>
+<p>Give a player money.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">moneydeposit</span><span class="p">:</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+<p>Deposits 1000 to the player’s balance avaliable.</p>
 </div>
 <div class="section" id="permission-checking">
 <h2>Permission checking<a class="headerlink" href="#permission-checking" title="Permalink to this headline">¶</a></h2>

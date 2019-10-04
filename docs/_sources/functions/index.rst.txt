@@ -70,9 +70,21 @@ Usage::
 Makes a player open a gui named "test".
 
 
+==============
+Money balance
+==============
+
+Check's a player balance.
+
+Usage::
+
+   moneybalance: 1000
+
+Checks if the player has a balance of  1000 dollars.
+
 
 ==============
-Pay with money
+Money paying
 ==============
 
 Allows a player to pay money.
@@ -82,6 +94,19 @@ Usage::
    moneywithdraw: 1000
 
 Makes the player pay 1000 if they have the balance avaliable.
+
+
+==============
+Money deposit
+==============
+
+Give a player money.
+
+Usage::
+
+   moneydeposit: 1000
+
+Deposits 1000 to the player's balance avaliable.
 
 
 ==========
