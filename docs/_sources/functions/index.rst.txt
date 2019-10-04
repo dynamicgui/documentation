@@ -218,6 +218,18 @@ Usage::
 
 Sets the name for the current slot to "name".
 
+================
+Set nbt for slot
+================
+
+Set nbt for the current slot.
+
+Usage::
+   
+   setnbt: {SkullOwner:\"Notch\"}
+
+Sets the nbt for the current slot to the player head of "Notch".
+
 
 ================
 Set type for slot
