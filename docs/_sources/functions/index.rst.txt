@@ -31,6 +31,20 @@ Usage::
 The function would require the player to have level 1000.
 
 
+===========
+Condition
+===========
+
+Checks a condition when evaluated, `uses EvalEx. <https://github.com/uklimaschewski/EvalEx>`_
+
+
+Usage::
+
+   condition: 5 == 5
+   
+Checks if 5 is equal to 5, can also be used with replacers.
+
+
 ==========================
 Executes a command as console
 ==========================
