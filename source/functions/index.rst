@@ -32,10 +32,12 @@ The function would require the player to have level 1000.
 
 
 ==========================
-Execute Command As Console
+Executes a command as console
 ==========================
 
 Executes a command for the player as console.
+
+**Warning this will not do permission checks for the player**
 
 Usage::
 
@@ -45,7 +47,7 @@ Executes the say command from console.
 
 
 ==========================
-Execute Command As Player
+Execute a command as a player
 ==========================
 
 Makes a player execute a command.
