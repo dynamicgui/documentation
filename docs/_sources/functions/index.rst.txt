@@ -31,9 +31,9 @@ Usage::
 The function would require the player to have level 1000.
 
 
-===========
+=========
 Condition
-===========
+=========
 
 Checks a condition when evaluated, `uses EvalEx. <https://github.com/uklimaschewski/EvalEx>`_
 
@@ -45,9 +45,9 @@ Usage::
 Checks if 5 is equal to 5, can also be used with replacers.
 
 
-==========================
+=============================
 Executes a command as console
-==========================
+=============================
 
 Executes a command for the player as console.
 
@@ -60,9 +60,9 @@ Usage::
 Executes the say command from console.
 
 
-==========================
+=============================
 Execute a command as a player
-==========================
+=============================
 
 Makes a player execute a command.
 
@@ -86,9 +86,9 @@ Usage::
 Makes a player open a gui named "test".
 
 
-========
+========================
 Log a message to console
-========
+========================
 
 Log a message to the console so it can be viewed in the log or console.
 
@@ -100,9 +100,9 @@ Usage::
 Logs the message test to the console and log.
 
 
-==============
+=============
 Money balance
-==============
+=============
 
 Check's a player balance.
 
@@ -113,9 +113,9 @@ Usage::
 Checks if the player has a balance of  1000 dollars.
 
 
-==============
+============
 Money paying
-==============
+============
 
 Allows a player to pay money.
 
@@ -126,9 +126,9 @@ Usage::
 Makes the player pay 1000 if they have the balance avaliable.
 
 
-==============
+=============
 Money deposit
-==============
+=============
 
 Give a player money.
 
@@ -139,9 +139,9 @@ Usage::
 Deposits 1000 to the player's balance avaliable.
 
 
-==========
+===================
 Permission checking
-==========
+===================
 
 Checks if the player has a permission.
 
@@ -165,9 +165,9 @@ Usage::
 Checks if the player does not have the permission "some.permission".
 
 
-=========
+=================
 Permission adding
-=========
+=================
 
 The addpermission function is used to add a permission to a player.
 
@@ -178,9 +178,9 @@ Usage::
 Adds the permission "some.permission" to the player.
 
 
-=========
+===================
 Permission removing
-=========
+===================
 
 The removepermission function is used to remove a permission from the player.
 
@@ -191,9 +191,9 @@ Usage::
 Removes the permission "some.permission" from the player.
 
 
-===========
+========================
 Generate a random number
-===========
+========================
 
 Generates a random number in a number range.
 
@@ -204,9 +204,9 @@ Usage::
 Generates a random number from 1 through 10 and the winning number is 9.
 
 
-==============
+================
 Message a player
-==============
+================
 
 Sends the player a message.
 
@@ -242,9 +242,9 @@ Usage::
 Sends the player to the server "testserver".
 
 
-================
+=======================
 Set amount for the slot
-================
+=======================
 
 Sets the amount of the current slot.
 
@@ -256,9 +256,9 @@ Usage::
 Sets the slot of the slot to 5.
 
 
-================
+=============================
 Set close for the slot or gui
-================
+=============================
 
 Set whether or not the slot or gui should close on click.
 
@@ -270,9 +270,9 @@ Usage::
 Sets the slot or gui to close on slot click.
 
 
-================
+=================
 Set data for slot
-================
+=================
 
 Set data for the current slot, can be used in **1.12 and below.**
 
@@ -285,9 +285,9 @@ Usage::
 Sets the data value of the current slot to 1.
 
 
-====================
+=====================
 Set enchants for slot
-====================
+=====================
 
 Sets enchants for the current slot.
 Check here for the `enchantment enums <https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html>`_
@@ -298,9 +298,9 @@ Usage::
 
 Sets the current slot to have level 1 durability.
 
-================
+=================
 Set lore for slot
-================
+=================
 
 Set lore for the current slot.
 
@@ -318,9 +318,9 @@ Usage::
    
 Sets the lore for the current slot to "test" on the first line and "lore" on the second.
 
-================
+=================
 Set name for slot
-================
+=================
 
 Set name for the current slot.
 
@@ -343,9 +343,9 @@ Usage::
 Sets the nbt for the current slot to the player head of "Notch".
 
 
-================
+=================
 Set type for slot
-================
+=================
 
 Set type for the current slot.
 
