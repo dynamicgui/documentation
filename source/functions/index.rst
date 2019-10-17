@@ -31,6 +31,29 @@ Usage::
 The function would require the player to have level 1000.
 
 
+===============
+Check Slot Tick
+===============
+
+Checks the current tick or frame of the given slot, `uses EvalEx. <https://github.com/uklimaschewski/EvalEx>`_ 
+
+Usage::
+
+    checktick: %tick% % 2 == 0
+	
+This would check if the current tick for the slot is divisible evenly by 2.
+
+Usage::
+
+    checktick: %frame% > 5
+	
+This would check if the current slot has been open for 100 ticks or 5 frames.
+
+Slots store how long they have been open for and their ticks reset every 20 server ticks.
+
+After a full 20 ticks have passed a full frame of animation has occured.
+
+
 =========
 Condition
 =========

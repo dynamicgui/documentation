@@ -86,6 +86,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#broadcast">Broadcast</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#check-level">Check Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-slot-tick">Check Slot Tick</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#condition">Condition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#executes-a-command-as-console">Executes a command as console</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#execute-a-command-as-a-player">Execute a command as a player</a></li>
@@ -220,6 +221,22 @@ If you are interested in making functions take a look at the <a class="reference
 </pre></div>
 </div>
 <p>The function would require the player to have level 1000.</p>
+</div>
+<div class="section" id="check-slot-tick">
+<h2>Check Slot Tick<a class="headerlink" href="#check-slot-tick" title="Permalink to this headline">¶</a></h2>
+<p>Checks the current tick or frame of the given slot, <a class="reference external" href="https://github.com/uklimaschewski/EvalEx">uses EvalEx.</a></p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">checktick</span><span class="p">:</span> <span class="o">%</span><span class="n">tick</span><span class="o">%</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>This would check if the current tick for the slot is divisible evenly by 2.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">checktick</span><span class="p">:</span> <span class="o">%</span><span class="n">frame</span><span class="o">%</span> <span class="o">&gt;</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>This would check if the current slot has been open for 100 ticks or 5 frames.</p>
+<p>Slots store how long they have been open for and their ticks reset every 20 server ticks.</p>
+<p>After a full 20 ticks have passed a full frame of animation has occured.</p>
 </div>
 <div class="section" id="condition">
 <h2>Condition<a class="headerlink" href="#condition" title="Permalink to this headline">¶</a></h2>
