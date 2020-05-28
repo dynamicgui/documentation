@@ -6,7 +6,7 @@ DynamicGui currently support `yaml <https://learnxinyminutes.com/docs/yaml/>`_, 
 To write guis for DynamicGui you will need to know one the listed languages.
 
 .. toctree::
-   :maxdepth 2
+   :maxdepth 3
    :caption: Gui Concepts
    
    functions/index

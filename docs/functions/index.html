@@ -86,10 +86,17 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#broadcast">Broadcast</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#check-level">Check Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-item-type-in-hand">Check Item Type in Hand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-player-world">Check Player World</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#check-slot-tick">Check Slot Tick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-cooldown">Set Cooldown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-on-cooldown">Check on cooldown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-not-on-cooldown">Check not on cooldown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#condition">Condition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#executes-a-command-as-console">Executes a command as console</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#execute-a-command-as-a-player">Execute a command as a player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gamerule-checking">Gamerule Checking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gamerule-modifying">Gamerule Modifying</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gui-open">Gui open</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#log-a-message-to-console">Log a message to console</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#money-balance">Money balance</a></li>
@@ -102,6 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#generate-a-random-number">Generate a random number</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#message-a-player">Message a player</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#remove-slot">Remove Slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reset-frame">Reset Frame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#send-player-to-server">Send player to server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#set-amount-for-the-slot">Set amount for the slot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#set-close-for-the-slot-or-gui">Set close for the slot or gui</a></li>
@@ -222,6 +230,24 @@ If you are interested in making functions take a look at the <a class="reference
 </div>
 <p>The function would require the player to have level 1000.</p>
 </div>
+<div class="section" id="check-item-type-in-hand">
+<h2>Check Item Type in Hand<a class="headerlink" href="#check-item-type-in-hand" title="Permalink to this headline">¶</a></h2>
+<p>Check a player’s in in their hand.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">checkitemtypeinhand</span><span class="p">:</span> <span class="n">DIRT</span>
+</pre></div>
+</div>
+<p>The function would check if the user has a dirt in their hand.</p>
+</div>
+<div class="section" id="check-player-world">
+<h2>Check Player World<a class="headerlink" href="#check-player-world" title="Permalink to this headline">¶</a></h2>
+<p>Check to see if a player is in a world.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">checkplayerworld</span><span class="p">:</span> <span class="n">world</span>
+</pre></div>
+</div>
+<p>The function would check to see if the player is in the world “world”.</p>
+</div>
 <div class="section" id="check-slot-tick">
 <h2>Check Slot Tick<a class="headerlink" href="#check-slot-tick" title="Permalink to this headline">¶</a></h2>
 <p>Checks the current tick or frame of the given slot, <a class="reference external" href="https://github.com/uklimaschewski/EvalEx">uses EvalEx.</a></p>
@@ -237,6 +263,33 @@ If you are interested in making functions take a look at the <a class="reference
 <p>This would check if the current slot has been open for 100 ticks or 5 frames.</p>
 <p>Slots store how long they have been open for and their ticks reset every 20 server ticks.</p>
 <p>After a full 20 ticks have passed a full frame of animation has occured.</p>
+</div>
+<div class="section" id="set-cooldown">
+<h2>Set Cooldown<a class="headerlink" href="#set-cooldown" title="Permalink to this headline">¶</a></h2>
+<p>Sets a cooldown with a name.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setcooldown</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span><span class="mi">1000</span>
+</pre></div>
+</div>
+<p>Sets the cooldown named “name” to expire in 1000 millisconds.</p>
+</div>
+<div class="section" id="check-on-cooldown">
+<h2>Check on cooldown<a class="headerlink" href="#check-on-cooldown" title="Permalink to this headline">¶</a></h2>
+<p>Checks to see if a named cooldown is still on cooldown.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">isoncooldown</span><span class="p">:</span> <span class="n">name</span>
+</pre></div>
+</div>
+<p>Checks to see if the cooldown named “name” is on cooldown.</p>
+</div>
+<div class="section" id="check-not-on-cooldown">
+<h2>Check not on cooldown<a class="headerlink" href="#check-not-on-cooldown" title="Permalink to this headline">¶</a></h2>
+<p>Checks to see if a named cooldown is off cooldown.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">isnotoncooldown</span><span class="p">:</span> <span class="n">name</span>
+</pre></div>
+</div>
+<p>Checks to see if the cooldown named “name” is off cooldown.</p>
 </div>
 <div class="section" id="condition">
 <h2>Condition<a class="headerlink" href="#condition" title="Permalink to this headline">¶</a></h2>
@@ -265,6 +318,24 @@ If you are interested in making functions take a look at the <a class="reference
 </pre></div>
 </div>
 <p>Makes a player execute the spawn command.</p>
+</div>
+<div class="section" id="gamerule-checking">
+<h2>Gamerule Checking<a class="headerlink" href="#gamerule-checking" title="Permalink to this headline">¶</a></h2>
+<p>Checks a gamerule for a world.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">getgamerule</span><span class="p">:</span> <span class="n">world</span><span class="p">,</span><span class="n">mobSpawning</span><span class="p">,</span><span class="n">false</span>
+</pre></div>
+</div>
+<p>This would check to see if the mobSpawning gamerule is disabled for the world “world”.</p>
+</div>
+<div class="section" id="gamerule-modifying">
+<h2>Gamerule Modifying<a class="headerlink" href="#gamerule-modifying" title="Permalink to this headline">¶</a></h2>
+<p>Set a gamerule for a world.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setgamerule</span><span class="p">:</span> <span class="n">world</span><span class="p">,</span><span class="n">mobSpawning</span><span class="p">,</span><span class="n">false</span>
+</pre></div>
+</div>
+<p>This would make it so the mobSpawning rule would be disabled in the world “world”.</p>
 </div>
 <div class="section" id="gui-open">
 <h2>Gui open<a class="headerlink" href="#gui-open" title="Permalink to this headline">¶</a></h2>
@@ -373,6 +444,15 @@ If you are interested in making functions take a look at the <a class="reference
 </pre></div>
 </div>
 <p>Removes the slot from which the function is called.</p>
+</div>
+<div class="section" id="reset-frame">
+<h2>Reset Frame<a class="headerlink" href="#reset-frame" title="Permalink to this headline">¶</a></h2>
+<p>Reset the slot’s current animation frame</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">resetframe</span>
+</pre></div>
+</div>
+<p>Resets the animation frame of the slot that it is executed from.</p>
 </div>
 <div class="section" id="send-player-to-server">
 <h2>Send player to server<a class="headerlink" href="#send-player-to-server" title="Permalink to this headline">¶</a></h2>

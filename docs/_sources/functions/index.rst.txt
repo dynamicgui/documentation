@@ -6,6 +6,7 @@ With functions you can customize `guis <../gui>`_ and `slots <../slot>`_.
 Below are the built-in functions for DynamicGui, addons may add more.
 If you are interested in making functions take a look at the `developer docs. <../functionapi>`_
 
+
 =========
 Broadcast
 =========
@@ -18,6 +19,7 @@ Usage::
 
 Broadcasts the message "This is a test message!" to all players.
 
+
 ===========
 Check Level
 ===========
@@ -29,6 +31,32 @@ Usage::
    checklevel: 1000 
    
 The function would require the player to have level 1000.
+
+
+=======================
+Check Item Type in Hand
+=======================
+
+Check a player's in in their hand.
+
+Usage::
+
+   checkitemtypeinhand: DIRT 
+   
+The function would check if the user has a dirt in their hand.
+
+
+==================
+Check Player World
+==================
+
+Check to see if a player is in a world.
+
+Usage::
+
+   checkplayerworld: world
+   
+The function would check to see if the player is in the world "world".
 
 
 ===============
@@ -53,6 +81,49 @@ Slots store how long they have been open for and their ticks reset every 20 serv
 
 After a full 20 ticks have passed a full frame of animation has occured.
 
+
+============
+Set Cooldown
+============
+
+Sets a cooldown with a name.
+
+
+Usage::
+
+   setcooldown: name,1000
+   
+Sets the cooldown named "name" to expire in 1000 millisconds.
+
+
+=================
+Check on cooldown
+=================
+
+Checks to see if a named cooldown is still on cooldown.
+
+
+Usage::
+
+   isoncooldown: name
+   
+Checks to see if the cooldown named "name" is on cooldown.
+
+
+
+
+=====================
+Check not on cooldown
+=====================
+
+Checks to see if a named cooldown is off cooldown.
+
+
+Usage::
+
+   isnotoncooldown: name
+   
+Checks to see if the cooldown named "name" is off cooldown.
 
 =========
 Condition
@@ -94,6 +165,32 @@ Usage::
    executep: spawn
 
 Makes a player execute the spawn command.
+
+
+=================
+Gamerule Checking
+=================
+
+Checks a gamerule for a world.
+
+Usage::
+
+   getgamerule: world,mobSpawning,false
+
+This would check to see if the mobSpawning gamerule is disabled for the world "world".
+
+
+==================
+Gamerule Modifying
+==================
+
+Set a gamerule for a world.
+
+Usage::
+
+   setgamerule: world,mobSpawning,false
+
+This would make it so the mobSpawning rule would be disabled in the world "world".
 
 
 ========
@@ -250,6 +347,19 @@ Usage::
    removeslot: this
  
 Removes the slot from which the function is called.
+
+
+===========
+Reset Frame
+===========
+
+Reset the slot's current animation frame
+
+Usage::
+
+   resetframe
+ 
+Resets the animation frame of the slot that it is executed from.
 
 
 =====================
