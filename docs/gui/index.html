@@ -172,28 +172,25 @@
 <p>Guis like slots can have functions and failfunctions.
 Below is an example of a gui.
 If you do not know how any function works take a look at the <a class="reference external" href="../functions">function documentation.</a></p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">gui-title</span><span class="p">:</span> <span class="s">&quot;&amp;c&amp;lTest</span><span class="nv"> </span><span class="s">GUI&quot;</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">title</span><span class="p">:</span> <span class="s">&quot;&amp;c&amp;lTest</span><span class="nv"> </span><span class="s">GUI&quot;</span>
 <span class="nt">rows</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
 <span class="nt">mode</span><span class="p">:</span> <span class="s">&quot;set&quot;</span> <span class="c1">#Set will set items at the index, starting at 1</span>
             <span class="c1">#Where as &#39;add&#39; will add items into the gui instead of setting at a specific index</span>
 <span class="nt">close</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span> <span class="c1">#Whether or not slots will close the gui, false will not close the gui</span>
 <span class="nt">locations</span><span class="p">:</span>
 <span class="p p-Indicator">-</span> <span class="s">&quot;0,64,0,world&quot;</span> <span class="c1">#Locations the gui can be clicked on in the world</span>
-<span class="nt">npc-ids</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="s">&#39;0&#39;</span> <span class="c1">#Npc ids that the gui will be registered to</span>
+<span class="nt">npc</span><span class="p">:</span>
+  <span class="nt">citizens</span><span class="p">:</span> <span class="c1">#Plugin that is used for npcs</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;0&#39;</span> <span class="c1">#Npc ids that the gui will be registered to</span>
 <span class="nt">alias</span><span class="p">:</span>
 <span class="p p-Indicator">-</span> <span class="s">&quot;test&quot;</span> <span class="c1">#Command aliases</span>
 
 <span class="nt">functions</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="s">&quot;permission:</span><span class="nv"> </span><span class="s">gui.test&quot;</span> <span class="c1">#Permission needed to open the gui</span>
-<span class="p p-Indicator">-</span> <span class="s">&quot;sound:</span><span class="nv"> </span><span class="s">LAVA,1.0,1.0&quot;</span> <span class="c1">#Sound will be played if player has the permission</span>
-
-<span class="nt">permission-failfunctions</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="s">&quot;pmsg:</span><span class="nv"> </span><span class="s">&amp;4You</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">gui!&quot;</span>
-<span class="c1">#Player will be messaged if they do not have access</span>
-<span class="c1">#Any function can be used in this section</span>
-<span class="c1">#If any function fails in this area the functions will not continue</span>
-<span class="c1">#past the failed function</span>
+  <span class="nt">load-functions</span><span class="p">:</span>
+        <span class="nt">type</span><span class="p">:</span> <span class="s">&quot;load&quot;</span>
+        <span class="nt">functions</span><span class="p">:</span>
+  <span class=" -Error">  </span><span class="p p-Indicator">-</span> <span class="s">&quot;permission:</span><span class="nv"> </span><span class="s">gui.test&quot;</span> <span class="c1">#Permission needed to open the gui</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;sound:</span><span class="nv"> </span><span class="s">LAVA,1.0,1.0&quot;</span> <span class="c1">#Sound will be played if player has the permission</span>
 
 <span class="s">&#39;0&#39;</span><span class="p p-Indicator">:</span>
   <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;EXP_BOTTLE&quot;</span>
@@ -201,71 +198,14 @@ If you do not know how any function works take a look at the <a class="reference
   <span class="nt">lore</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&quot;&amp;cYou</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">least</span><span class="nv"> </span><span class="s">level</span><span class="nv"> </span><span class="s">1337</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">pass&quot;</span>
   <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;checklevel:</span><span class="nv"> </span><span class="s">1337&quot;</span> <span class="c1">#Checks to see if the user has 1337 exp</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;cLevel</span><span class="nv"> </span><span class="s">check</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">passed,</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">least</span><span class="nv"> </span><span class="s">level</span><span class="nv"> </span><span class="s">1337&quot;</span>
-<span class="s">&#39;1&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;BEDROCK&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;fConsole</span><span class="nv"> </span><span class="s">command</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;executec:</span><span class="nv"> </span><span class="s">say</span><span class="nv"> </span><span class="s">Broadcasting</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">console,</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span>
-<span class="s">&#39;2&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;PAPER&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;fGui</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;gui:</span><span class="nv"> </span><span class="s">blank&quot;</span>
-<span class="s">&#39;3&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;BARRIER&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;cClose</span><span class="nv"> </span><span class="s">Test&quot;</span>
-  <span class="nt">close</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span> <span class="c1">#Since close is set to true, this will override the gui close setting</span>
-<span class="s">&#39;4&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;WORKBENCH&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;6Broadcast</span><span class="nv"> </span><span class="s">Test!&quot;</span>
-  <span class="nt">lore</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;Used</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">testing</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">broadcasting&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;cBroadcast</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">working!&quot;</span> <span class="c1">#Broadcasts when clicked</span>
-<span class="s">&#39;5&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;STONE&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;4Set</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;setdata:</span><span class="nv"> </span><span class="s">1&quot;</span> <span class="c1">#Sets the data to 1 when clicked</span>
-<span class="s">&#39;6&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;ENCHANTMENT_TABLE&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;bEnchanting</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;setenchants:</span><span class="nv"> </span><span class="s">DURABILITY,1&quot;</span> <span class="c1">#Adds durability 1 to the item when clicked</span>
-<span class="s">&#39;7&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;REDSTONE&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;cName</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;setname:</span><span class="nv"> </span><span class="s">&amp;fName</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span> <span class="c1">#Sets the name of the item when clicked</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">Name</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span> <span class="c1">#Broadcasts if the name was set</span>
-<span class="s">&#39;9&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;SAND&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;aRemove</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;removeslot:</span><span class="nv"> </span><span class="s">this&quot;</span> <span class="c1">#Removes the item when clicked</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;bRemove</span><span class="nv"> </span><span class="s">passed&quot;</span> <span class="c1">#Broadcasts if the removal was successful</span>
-<span class="s">&#39;10&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;DIRT&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;aType</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;settype:</span><span class="nv"> </span><span class="s">GRASS&quot;</span> <span class="c1">#Sets the item type to grass</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;aType</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span> <span class="c1">#Broadcasts if the item type was updated</span>
-<span class="s">&#39;11&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;DIAMOND_BLOCK&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;2Money</span><span class="nv"> </span><span class="s">Pay</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;moneywithdraw:</span><span class="nv"> </span><span class="s">100&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;aPay</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span>
-<span class="s">&#39;13&#39;</span><span class="p p-Indicator">:</span>
-  <span class="nt">icon</span><span class="p">:</span> <span class="s">&quot;SAND&quot;</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;&amp;aRemove</span><span class="nv"> </span><span class="s">load</span><span class="nv"> </span><span class="s">test&quot;</span>
-  <span class="nt">load-functions</span><span class="p">:</span> <span class="c1">#Fuctions that happen on load, before the gui opens</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;removeslot:</span><span class="nv"> </span><span class="s">this&quot;</span> <span class="c1">#Removes this slot</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;bRemove</span><span class="nv"> </span><span class="s">load</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">passed&quot;</span> <span class="c1">#Broadcasts if successfully removed</span>
-  <span class="nt">functions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">Why</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">broadcasting,</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">got</span><span class="nv"> </span><span class="s">removed&quot;</span> <span class="c1">#Function that can be ran if the slot does not get removed</span>
+    <span class="nt">click</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;left&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;right&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;middle&quot;</span>
+      <span class="nt">functions</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;checklevel:</span><span class="nv"> </span><span class="s">1337&quot;</span> <span class="c1">#Checks to see if the user has 1337 exp</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;broadcast:</span><span class="nv"> </span><span class="s">&amp;cLevel</span><span class="nv"> </span><span class="s">check</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">passed,</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">least</span><span class="nv"> </span><span class="s">level</span><span class="nv"> </span><span class="s">1337&quot;</span>
 </pre></div>
 </div>
 </div>
