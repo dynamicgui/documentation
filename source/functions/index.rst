@@ -362,6 +362,19 @@ Usage::
 Resets the animation frame of the slot that it is executed from.
 
 
+==========
+Reset Tick
+==========
+
+Reset the slot's animation tick.
+
+Usage::
+
+   resettick
+ 
+Resets the animation tick of the slot that it is executed from.
+
+
 =====================
 Send player to server
 =====================
